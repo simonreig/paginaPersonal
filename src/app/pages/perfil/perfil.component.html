@@ -1,0 +1,56 @@
+<div [class]="cont">
+    <div class="pc">
+        <br>
+        <h1 class="text-center animated fadeIn fast">Sobre Mí</h1>
+        <hr>
+    </div>
+    <h1 class="resp animated fadeIn fast">Sobre Mí</h1>
+    <div class="row">
+        <div class="col animated fadeIn slow">
+            <img src="./assets/otra sin fondo.png">
+            <div class="mt-3">
+                <div class="row">
+                    <div [class]="col">
+                        <h5 class="text-info">Nombre:</h5>
+                    </div>
+                    <div class="col">
+                        <h5 class="text-warning">Simón Reig</h5>
+                    </div>
+                    <div class="row">
+                        <div [class]="col">
+                            <h5 class="text-info">Fecha de nacimiento:</h5>
+                        </div>
+                        <div [class]="col">
+                            <h5 class="text-warning">30 SEP 1998</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div [class]="col">
+                            <h5 class="text-info">Ubicación:</h5>
+                        </div>
+                        <div class="col">
+                            <h5 class="text-warning">Alta Gracia, Córdoba, Argentina</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div [class]="col">
+                            <h5 class="text-info">Email:</h5>
+                        </div>
+                        <div class="col">
+                            <h5 class="text-warning">simonreig@gmail.com</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col animated fadeIn slow">
+            <h4 class="margin">
+                <i class="fas fa-caret-right text-warning"></i> {{objetivo}}
+            </h4>
+            <br>
+            <br>
+            <h5 class="m">
+                <i class="fas fa-caret-right text-warning"></i> {{descripcion}}
+            </h5>
+        </div>
+    </div>

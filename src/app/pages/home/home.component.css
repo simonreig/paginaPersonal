@@ -1,0 +1,52 @@
+button {
+    border-radius: 100%;
+}
+
+.w1 {
+    max-width: 504px;
+}
+
+img {
+    width: auto;
+    height: auto;
+    margin-top: auto;
+}
+
+.todo {
+    margin-top: 50px;
+}
+
+.margen {
+    margin-top: 50px;
+}
+
+i {
+    font-size: 2em;
+}
+
+@media all and (max-width: 1200px) {
+    img {
+        height: 350px;
+        width: auto;
+    }
+    .todo {
+        margin-top: 0px;
+    }
+    .margen {
+        margin-top: 0px;
+    }
+    .subt {
+        font-size: larger;
+    }
+}
+
+@media all and (max-width: 370px) {
+    i {
+        font-size: 1.5em;
+    }
+    img {
+        height: 300px;
+        width: auto;
+        margin-bottom: 30px;
+    }
+}

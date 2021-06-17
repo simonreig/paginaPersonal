@@ -1,0 +1,76 @@
+.label {
+    width: 400px;
+    height: 150px;
+    background-color: rgb(40, 36, 44);
+    border-radius: 10px;
+}
+
+.m {
+    margin-top: 20px;
+}
+
+span {
+    font-size: larger;
+}
+
+button {
+    margin-top: 100px;
+    width: 100px;
+    height: 60px;
+}
+
+.from {
+    margin-top: 100px;
+}
+
+.mensaje {
+    margin-top: 50px;
+    width: 850px;
+    height: 90px;
+    background-color: rgb(40, 36, 44);
+    border-radius: 10px;
+}
+
+.labelFrom {
+    width: 400px;
+    height: 60px;
+    background-color: rgb(40, 36, 44);
+    border-radius: 10px;
+}
+
+.h5from {
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+@media all and (max-width: 1200px) {
+    .label {
+        height: 100px;
+        width: 300px;
+    }
+    .from {
+        margin-top: 20px;
+    }
+    .mensaje {
+        margin-top: 50px;
+        width: 300px;
+        height: 100px;
+        background-color: rgb(40, 36, 44);
+        border-radius: 10px;
+    }
+    .m {
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .labelFrom {
+        width: 300px;
+        height: 50px;
+        background-color: rgb(40, 36, 44);
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    button {
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,61 @@
+<br>
+<div class="container mt-5">
+    <div class="row text-center animated fadeIn fast">
+        <div class="col">
+            <label class="label m">
+                <h3 class="text-info m"><i class="fas fa-map-marker-alt"></i> Ubicación</h3>
+                <h5 class="m text-warning">Alta Gracia, Córdoba, Argentina</h5>
+            </label>
+        </div>
+        <div class="col">
+            <label class="label m">
+                <h3 class="text-info m"><i class="fas fa-mobile-alt"></i> Teléfono</h3>
+                <h5 class="m text-warning">3547-463560</h5>
+            </label>
+        </div>
+        <div class="col">
+            <label class="label m">
+                <h3 class="text-info m"> <i class="fas fa-envelope"></i> Mail</h3>
+                <h5 class="m text-warning">simonreig@gmail.com</h5>
+            </label>
+        </div>
+    </div>
+    <form (ngSubmit)="enviarMail(f)" #f="ngForm">
+        <div class="from animated fadeIn slow">
+            <div class="row">
+                <div class="col text-center">
+                    <label class="labelFrom">
+                    <h5 class="h5from">Nombre: </h5>
+                    <input type="text"  class="form-control" name="emisorNombre" required [(ngModel)]="emisorNombre" >
+                    <span class="text-danger" *ngIf="f.submitted && f.controls['emisorNombre'].errors">Por favor, indique su nombre</span>
+                </label>
+                </div>
+                <div class="col text-center">
+                    <label class="labelFrom">
+                    <h5 class="h5from">Mail: </h5>
+                    <input type="email" name="emisorEmail" class="form-control" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" [(ngModel)]="emisorEmail" >
+                    <span class="text-danger" *ngIf="f.submitted && f.controls['emisorEmail'].errors">El email es obligatorio</span>
+                </label>
+                </div>
+                <div class="col text-center">
+                    <label class="labelFrom">
+                    <h5 class="h5from">Asunto: </h5>
+                    <input type="text" class="form-control" [(ngModel)]="asunto" name="asunto">
+                </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <label class="mensaje">
+                <h5 class="h5from">Mensaje: </h5>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="mensaj" required [(ngModel)]="mensaje" rows="3"></textarea>
+                <span class="text-danger" *ngIf="f.submitted && f.controls['mensaj'].errors">Debe escribir un mensaje</span>
+            </label>
+                </div>
+                <div class="col text-center">
+                    <button type="submit" class="btn btn-outline-info">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,12 @@
+.respons {
+    display: none;
+}
+
+@media all and (max-width: 1200px) {
+    .pc {
+        display: none;
+    }
+    .respons {
+        display: block;
+    }
+}
